@@ -16,6 +16,6 @@ class Array:
 array2 = Array([], 1)
 
 
-array2.apply(6)
-array2.apply(2)
-array2.apply(7)
+array2.insert(6)
+array2.insert(2)
+array2.insert(7)
