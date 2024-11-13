@@ -10,6 +10,7 @@ class Array:
             if self.check_if_string(item):
 
                 self.items += [item]
+
         return self.items
 
     def check_if_string(self, item):
@@ -27,11 +28,7 @@ array2 = Array(1)
 
 array2.insert(93)
 array2.insert(9)
-array2.insert("33")
+array2.insert(5)
 
 
-array2.insert(933)
-array2.insert(933)
-array2.insert(34)
-array2.insert(933)
 array2.print()
