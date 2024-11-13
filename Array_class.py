@@ -13,6 +13,10 @@ class Array:
 
         return self.items
 
+    def remove(self, index):
+        if index > len(self.items):
+            return self.items[index]
+
     def check_if_string(self, item):
         if type(item) == str:
             return False
@@ -29,6 +33,6 @@ array2 = Array(1)
 array2.insert(93)
 array2.insert(9)
 array2.insert(5)
-
+array2.remove(2)
 
 array2.print()
