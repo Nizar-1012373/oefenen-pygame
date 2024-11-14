@@ -14,10 +14,10 @@ class Array:
         return self.items
 
     def remove(self, index):
-        if index <= len(self.items):
+        for i in range(self.length2):
+            self.items[index] -= self.items[index]
 
-            self.items[index - 1] = index
-            return self.items
+        return self.items
 
     def check_if_string(self, item):
         if type(item) == str:
