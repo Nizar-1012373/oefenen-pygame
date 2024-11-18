@@ -2,7 +2,7 @@ class Array:
     def __init__(self, length2):
 
         self.length2 = length2
-
+        self.count = 0
         self.items = []
 
     def remove(self, index):
@@ -14,14 +14,15 @@ class Array:
             return self.length2
 
     def insert(self, item):
+
         for i in range(self.length2):
             if self.check_if_string(item):
-                if len(self.items) > self.length2:
-                    return False
-                else:
-                    self.items.append(item)
+                self.count += 1
+                self.items[: self.count]
 
-            return self.items
+                self.items.append(item)
+
+                return self.items
 
     def check_if_string(self, item):
         if type(item) == str:
@@ -32,7 +33,7 @@ class Array:
 
     def print(self):
 
-        print(self.items, self.length2)
+        print(self.items, self.count)
 
 
 array2 = Array(6)
