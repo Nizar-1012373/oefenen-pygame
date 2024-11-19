@@ -7,6 +7,7 @@ class Linkedlist:
         print("add first")
 
     def addLast(self):
+
         print("add last")
 
     def deleteFirst(self):
@@ -17,6 +18,14 @@ class Linkedlist:
 
     def indexOf(self):
         print("indexOf")
+
+
+class Node:
+    def __init__(self, node1: int, node2: int, node3: int, node4: int):
+        self.node1 = node1
+        self.node2 = node2
+        self.node3 = node3
+        self.node4 = node4
 
 
 linked_list = Linkedlist(34, 4)
