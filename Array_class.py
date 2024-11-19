@@ -6,19 +6,23 @@ class Array:
         self.items = []
 
     def remove(self, index):
+        item = 0
 
-        for i in range(self.length2):
+        for i in range(self.count - 1):
+            if self.items[i] == self.items[index]:
+                index += 1
+                self.items[i] = self.items[i + 1]
 
-            self.items[index] = self.items[index + 1]
-            self.length2 -= 1
-            return self.length2
+        self.count -= 1
+        return self.count
 
     def insert(self, item):
-
-        for i in range(self.length2):
+        self.count += 1
+        for i in range(self.count):
             if self.check_if_string(item):
-                self.count += 1
+
                 self.items[: self.count]
+                print(self.count)
 
                 self.items.append(item)
 
@@ -36,7 +40,7 @@ class Array:
         print(self.items, self.count)
 
 
-array2 = Array(6)
+array2 = Array(2)
 
 array2.insert(93)
 array2.insert(9)
@@ -44,6 +48,6 @@ array2.insert(5)
 array2.insert(7)
 array2.insert(54)
 array2.insert(99)
-array2.remove(1)
+array2.remove(0)
 
 array2.print()
